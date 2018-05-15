@@ -34,6 +34,6 @@ train_dataset = train_dataset.shuffle(buffer_size=1000)  # randomize
 train_dataset = train_dataset.batch(32)
 
 # View a single example entry from a batch
-features, label = iter(train_dataset).next()
-print("example features:", features[0])
-print("example label:", label[0])
+#features, label = iter(train_dataset).next()
+#print("example features:", features[0])
+#print("example label:", label[0])
