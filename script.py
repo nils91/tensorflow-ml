@@ -34,7 +34,7 @@ train_dataset = train_dataset.shuffle(buffer_size=1000)  # randomize
 train_dataset = train_dataset.batch(32)
 
 # View a single example entry from a batch
-iter = train_dataset.make_initializable_iterator()
+iter = train_dataset.__iter__()
 features, label = iter.get_next() 
 #iter = train_dataset.make_initializable_iterator()
 #el = iter.get_next()
