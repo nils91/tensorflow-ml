@@ -11,5 +11,3 @@ newfeatures=[[4.9,3.1,1.5,3.2],[5,3,1.5,0.2],[6,2.5,1.5,0.2],[4.2,1.3,1.7,0],[5.
 predictions=classifier.predict(newfeatures)
 for p in predictions:
 	print("Prediction: %i" % p);
-score = metrics.accuracy_score(iris.target, classifier.predict(newfeatures))
-print("Accuracy: %f" % score)
